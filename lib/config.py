@@ -15,13 +15,13 @@ sentinel_version = "1.6.0"
 
 def get_bytz_conf():
     if sys.platform == 'win32':
-        bytz_conf = os.path.join(os.getenv('APPDATA'), "Bytz/bytz.conf")
+        bytz_conf = os.path.join(os.getenv('APPDATA'), "Bytzcoin/bytz.conf")
     else:
         home = os.environ.get('HOME')
 
-        bytz_conf = os.path.join(home, ".bytz/bytz.conf")
+        bytz_conf = os.path.join(home, ".bytzcoin/bytz.conf")
         if sys.platform == 'darwin':
-            bytz_conf = os.path.join(home, "Library/Application Support/Bytz/bytz.conf")
+            bytz_conf = os.path.join(home, "Library/Application Support/Bytzcoin/bytz.conf")
 
     bytz_conf = sentinel_cfg.get('bytz_conf', bytz_conf)
 
