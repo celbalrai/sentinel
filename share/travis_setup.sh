@@ -1,9 +1,9 @@
 #!/bin/bash
 set -evx
 
-mkdir ~/.bytz
+mkdir ~/.bytzcoin
 
 # safety check
-if [ ! -f ~/.bytz/.bytz.conf ]; then
-  cp share/bytz.conf.example ~/.bytz/bytz.conf
+if [ ! -f ~/.bytzcoin/bytz.conf ]; then
+  cp share/bytz.conf.example ~/.bytzcoin/bytz.conf
 fi
